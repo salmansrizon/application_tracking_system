@@ -8,3 +8,8 @@ supabase-py
 python-jose[cryptography]
 passlib[bcrypt]
 pydantic-settings
+pypdf2
+python-docx
+openai
+qdrant-client
+fastapi-mail

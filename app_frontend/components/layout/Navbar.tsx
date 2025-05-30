@@ -33,8 +33,16 @@ const Navbar = () => {
         <div>
           {isAuthenticated ? (
             <>
-              <span className="mr-4">Welcome, {user?.email}</span>
-              <Link href="/jobs" className="mr-4 hover:text-gray-300">My Jobs</Link>
+              <span className="mr-4">Welcome, {user?.email?.split('@')[0]}</span>
+              <Link href="/jobs" className="mr-4 hover:text-gray-300">
+                My Jobs
+              </Link>
+              <Link href="/resume-checker" className="mr-4 hover:text-gray-300">
+                Resume Checker
+              </Link>
+              <Link href="/interview-prep" className="mr-4 hover:text-gray-300">
+                Interview Prep
+              </Link>
               <button onClick={handleLogout} className="hover:text-gray-300">
                 Logout
               </button>
