@@ -1,0 +1,10 @@
+fastapi
+uvicorn[standard]
+pydantic
+# Add testing libraries later: pytest, httpx
+pytest
+httpx
+supabase-py
+python-jose[cryptography]
+passlib[bcrypt]
+pydantic-settings
