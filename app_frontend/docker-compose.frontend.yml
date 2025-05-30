@@ -1,0 +1,17 @@
+version: '3.8'
+services:
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    volumes:
+      - .:/app_frontend # Mount current directory for local development
+      - /app_frontend/node_modules # Don't mount node_modules from host
+      - /app_frontend/.next # Don't mount .next from host
+    environment:
+      NODE_ENV: development # Or production for prod builds
+      # Add any frontend specific env vars here, e.g., NEXT_PUBLIC_API_URL
+    # depends_on:
+      # - backend # If backend is in the same docker-compose file
