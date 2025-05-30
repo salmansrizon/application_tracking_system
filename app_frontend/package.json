@@ -1,0 +1,31 @@
+{
+  "name": "app_frontend",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@hookform/resolvers": "^5.0.1",
+    "axios": "^1.9.0",
+    "next": "latest",
+    "react": "^18",
+    "react-dom": "^18",
+    "react-hook-form": "^7.56.4",
+    "zod": "^3.25.42"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "autoprefixer": "^10.0.1",
+    "eslint": "^8",
+    "eslint-config-next": "latest",
+    "postcss": "^8",
+    "tailwindcss": "latest",
+    "typescript": "^5"
+  }
+}
